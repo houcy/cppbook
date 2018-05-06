@@ -12,7 +12,18 @@
 #include <cstdio> //必须包含的头文件
 
 int main(){ //主函数
-    print("hello world!\n"); // 输出 其中\n代码换行
+    printf("hello world!\n"); // 输出 其中\n代码换行
+    return 0;
+}
+```
+
+**输出多行:**,转义字符`'\n'`代表换行
+```c
+#include <cstdio> //必须包含的头文件
+
+int main(){ //主函数
+    printf("hello world1!\n"); // 输出 其中\n代码换行
+    printf("ni hao shi jie!\n"); // 输出 其中\n代码换行
     return 0;
 }
 ```
@@ -22,18 +33,7 @@ int main(){ //主函数
 #include <cstdio> //必须包含的头文件
 
 int main(){ //主函数
-    print("hello world1!\n"); // 输出 其中\n代码换行
-    print("ni hao shi jie!\n"); // 输出 其中\n代码换行
-    return 0;
-}
-```
-
-**输出多行**
-```c
-#include <cstdio> //必须包含的头文件
-
-int main(){ //主函数
-    print("hello world1!\nni hao shi jie!\n"); // 输出 其中\n代码换行
+    printf("hello world1!\nni hao shi jie!\n"); // 输出 其中\n代码换行
     return 0;
 }
 ```
@@ -45,7 +45,7 @@ int main(){ //主函数
 #include <cstdio> //必须包含的头文件
 
 int main(){ //主函数
-    print("shuzi shi %d\n",42);  //%d 代表它自己本身要用一个整数来代替
+    printf("shuzi shi %d\n",42);  //%d 代表它自己本身要用一个整数来代替
     return 0;
 }
 ```
@@ -56,7 +56,7 @@ int main(){ //主函数
 #include <cstdio> //必须包含的头文件
 
 int main(){ //主函数
-    print("shuzi shi %d,ranhou shi %d: ",41,42);
+    printf("shuzi shi %d,ranhou shi %d: ",41,42);
     //%d 代表它自己本身要用一个整数来代替
     //按顺序来代替
 
@@ -72,7 +72,7 @@ int main(){ //主函数
 int main(){ //主函数
     int a = 41; //定义一个变量
     int b = 42;
-    print("shuzi shi %d,ranhou shi %d: ",a,b);
+    printf("shuzi shi %d,ranhou shi %d: ",a,b);
     //%d 代表它自己本身要用一个整数来代替
     //按顺序来代替
 
@@ -90,7 +90,7 @@ int main(){ //主函数
 
 int main(){ //主函数
     int f = 41.42; //定义一个实数变量
-    print("shuzi shi %f\n",f);
+    printf("shuzi shi %f\n",f);
     //%f 代表它自己本身要用一个实数来代替
     //按顺序来代替
 
@@ -105,7 +105,7 @@ int main(){ //主函数
 
 int main(){ //主函数
     int f = 41.4222; //定义一个实数变量
-    print("shuzi shi %0.2f\n",f);
+    printf("shuzi shi %0.2f\n",f);
     //%f 代表它自己本身要用一个实数来代替
     // 0.2 中的0表示整数部分全部输出
     // 0.2 中的2表示小数部分只输出2位,其余丢弃
@@ -117,13 +117,58 @@ int main(){ //主函数
 
 **保留小数点后四位**
 
+```c
+#include <cstdio> //必须包含的头文件
+
+int main(){ //主函数
+    int f = 41.12345678; //定义一个实数变量
+    printf("shuzi shi %0.4f\n",f);
+
+    return 0;
+}
+```
+
 **删除小数点后的数字,只保留整数**
 
+```c
+#include <cstdio> //必须包含的头文件
+
+int main(){ //主函数
+    int f = 41.12345678; //定义一个实数变量
+    printf("shuzi shi %0.0f\n",f);
+
+    return 0;
+}
+```
+
 ## 4.输出字符
+
+```c
+#include <cstdio> //必须包含的头文件
+
+int main(){ //主函数
+    char a = '!';
+    printf("zifu shi %c\n",a);
+
+    return 0;
+}
+```
 
 ## 5.输出字符串
 
 什么是字符串? 被`""`(双引号)包起来就是字符串
+
+```c
+#include <cstdio> //必须包含的头文件
+
+char a[] = "zifuchuan";
+int main(){ //主函数
+    printf("zifu shi %s\n",a);
+
+    return 0;
+}
+```
+
 
 ## 6.高级输出
 
