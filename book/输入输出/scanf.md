@@ -8,7 +8,7 @@
 
 int main(){
     int a;
-    scanf("%d",&a)
+    scanf("%d",&a);
     printf("du qu de shu zi shi %d",a);
     return 0;
 }
