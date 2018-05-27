@@ -1,3 +1,7 @@
+## 什么是OJ
+
+OJ(online judge)是一种网站,你可以这些网站阅读题目,提交代码,判断代码是否正确,参加比赛等.
+
 ## online judge 国内
 
  - [luogu](https://www.luogu.org/)
