@@ -2,6 +2,7 @@
     * [本书的约定](/book/开始/本书的约定)
     * [准备代码编写环境](/book/开始/准备代码编写环境)
     * [信息学竞赛](/book/开始/noip)
+    * [代码编写器Gedit的配置](/book/开始/gedit的配置)
     * [入门C++ 第一个程序](/book/开始/helloworld)
     * [常用的OJ](/book/开始/常用的OJ网站)
     * [linux的简单使用](/book/linux/index)

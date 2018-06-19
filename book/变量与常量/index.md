@@ -44,6 +44,24 @@ int a=10; a=100;
  - 布尔型: bool
  - 字符型: char
 
+## 一个常用的函数:`sizeof()`
+
+`sizeof(变量类型/变量名)` 返回**变量类型**或者**变量**所占内存的字节长度
+
+```c
+#include <cstdio>
+
+//sizeof(变量类型/变量名)
+int main(){
+
+    int a;
+    printf("%d",sizeof(a));
+
+    printf("%d",sizeof(long long));
+    return 0;
+}
+```
+
 ## 练习题目
 
 - luguo P1001 A+B Problem
